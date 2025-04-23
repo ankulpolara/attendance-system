@@ -2,10 +2,14 @@ const sql = require('mssql');
 
 // Database configuration
 const dbConfig = {
-  server: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  // server: process.env.DB_HOST,
+    server: "FDPC-SERVER\MSSQLF14",
+  // user: process.env.DB_USER,
+  user: "sa",
+  // password: process.env.DB_PASSWORD,
+  password: "Admin@123",
+  // database: process.env.DB_NAME,
+    database:"Realtime_Attendance1",
   options: {
     trustServerCertificate: true,
     enableArithAbort: true,
